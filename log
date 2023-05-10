@@ -32,3 +32,13 @@ heap.c:27:28: error: subscripted value is neither array nor pointer nor vector
       |                            ^
 Compilation failed
 c6b734e
+Wed 10 May 2023 10:57:16 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:27:29: error: invalid type argument of unary ‘*’ (have ‘int’)
+   27 |     pq->heapArray->priority[*pq->size]=data;
+      |                             ^~~~~~~~~
+Compilation failed
+f4b6330
