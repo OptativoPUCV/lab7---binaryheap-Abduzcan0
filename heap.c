@@ -40,7 +40,8 @@ Heap* createHeap(){
     }
     heap->heapArray = (heapElem*)malloc(sizeof(heapElem)*3);
     if(heap->heapArray == NULL)return NULL;
-
+    heap->size = 0;
+    heap->capac = 3;
 
    return heap;
 }
