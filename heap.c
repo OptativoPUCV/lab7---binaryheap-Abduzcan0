@@ -38,6 +38,9 @@ Heap* createHeap(){
     if(heap == NULL){
         return NULL;
     }
+    heap->heapArray = (heapElem*)malloc(sizeof(heapElem)*3);
+    if(heap->heapArray == NULL)return NULL;
+
 
    return heap;
 }
