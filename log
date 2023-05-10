@@ -22,3 +22,13 @@ Wed 10 May 2023 01:04:45 AM UTC:
  tests:  1|3
 total_score: 10/70
 7ad0878
+Wed 10 May 2023 10:56:55 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:27:28: error: subscripted value is neither array nor pointer nor vector
+   27 |     pq->heapArray->priority[pq->size]=data;
+      |                            ^
+Compilation failed
+c6b734e
