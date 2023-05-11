@@ -39,10 +39,11 @@ void heap_push(Heap* pq, void* data, int priority){
         pq->heapArray[indice]=pq->heapArray[(indice-1)/2];
         indice=(indice-1)/2;
     }
-   
-        
-        
     
+    pq->heapArray[indice].priority=priority;
+    pq->heapArray[indice].data=data;    
+        
+    pq->size++;
 
 }
 
